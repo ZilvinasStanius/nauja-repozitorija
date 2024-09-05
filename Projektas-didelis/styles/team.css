@@ -1,0 +1,27 @@
+#team {
+  padding: 90px 0;
+
+  .grid-team {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+    .people {
+      background-color: #f2f4f6;
+      border-radius: 3px;
+    }
+    h5 {
+      font-size: 18px;
+      margin: 16px 0 0;
+    }
+    p {
+      font-size: 16px;
+      margin: 0;
+    }
+  }
+  img {
+    width: 250px;
+    height: 330px;
+  }
+}
