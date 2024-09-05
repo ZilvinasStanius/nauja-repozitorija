@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saskaita</title>
+  <style>
+
+
+    .box {
+        border: 1px solid black;
+        width: 100vh;
+        height: 100vh;
+       
+        
+    }
+    .headline {
+        text-align: center;
+        
+        
+        
+    }
+    .headline > h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+    }
+    .headline > h2, h3 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+    
+    }
+     .pirkejas-pardavejas  {
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+
+      p {
+        text-align: center;
+        font-size: 10px;
+        font-style: italic;
+        }
+     
+        .mazas {
+        font-size: 8px;
+        
+     }
+   
+     .pirkejas-pardavejas  h2 {
+    font-size: 14px;
+    padding-right: 50px;
+   }
+   
+   .pirkejas-pardavejas p:nth-child(even) {
+    border: 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 0;
+    font-weight: bold;
+   }
+   
+   .pirkejas-pardavejas p:nth-child(odd) {
+    margin-top: 0px;    
+
+   }
+   .pardavejas {
+    width: 150px;
+   }
+   .pirkejas {
+    width: 150px;
+   }
+
+.headline > h1  {
+    margin-bottom:0;
+}
+.headline > h2, h3{
+    margin:5px;
+}
+    table, td, th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align:center;
+        
+    
+    }
+    th {
+    
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+   
+        
+    }
+    td {
+
+        font-size: 10px;
+        font-style: italic;
+        font-weight: bolder;
+        
+        
+    }
+    
+    .table {
+      margin-top: 50px;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+
+    }
+    .komp {
+        width: 120px;
+      
+    }
+    
+    tr {
+        height: 25px;
+    }
+    
+    .suma {
+        text-align: end;
+        margin-right: 70px;
+        margin-top: 5px;
+        font-style: normal;
+
+    }
+    .kita {
+        text-align: start;
+        margin-left:10%;
+        margin-top: 10px;
+        font-style: normal;
+    }
+
+
+
+    
+
+
+    
+
+  </style>
+</head>
+<body>
+    <div class="box">
+    <div class="headline">
+        <h1>PVM Sąskaita-faktūra</h1>
+        <h2>Serija 859 Nr. 012</h2>
+        <h3>2024-08-22</h3>
+    </div>
+    <div class="pirkejas-pardavejas">
+    <div class="pardavejas">
+        <h2>Pardavėjas:</h2>
+        <p>UAB "ĮMONĖ"</p>
+        <p class="mazas">(pavadinimas)</p>
+        <p>Gatvės g. 15, Vilnius</p>
+        <p class="mazas">(adresas)</p>
+        <p>3001231231</p>
+        <p class="mazas">(pardavėjo kodas)</p>
+        <p >LT10000323632635</p>
+        <p class="mazas">(PVM mokėtojo kodas)</p>
+
+    </div>
+    <div class="pirkejas">
+        <h2>Pirkėjas:</h2>
+        <p>UAB "Bendrovė"</p>
+        <p class="mazas">(pavadinimas)</p>
+        <p>Alėjos al. 10, Kaunas</p>
+        <p class="mazas">(adresas)</p>
+        <p>3000154888</p>
+        <p class="mazas">(pirkėjo kodas)</p>
+        <p>LT10000154888</p>
+        <p class="mazas">(PVM mokėtojo kodas)</p>
+    </div>
+</div>
+   <div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>EIL. NR.</th>
+                <th>PAVADINIMAS</th>
+                <th>MAT. VNT.</th>
+                <th>KIEKIS</th>
+                <th>KAINA (BE PVM EUR)</th>
+                <th>SUMA (BE PVM EUR)</th>
+                <th>PVM TARIFAS (%)</th>
+                <th>PVM SUMA EUR</th>
+                <th>SUMA EUR</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="lentele">1</td>
+                <td>Tušinukai XF001</td>
+                <td>Vnt.</td>
+                <td>10</td>
+                <td>1.00</td>
+                <td>10.00</td>
+                <td>21</td>
+                <td>2.10</td>
+                <td>12.10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+             <td class="komp">Kompiuterinių ekranai</td>
+                <td>Vnt.</td>
+                <td>1</td>
+                <td>149.00</td>
+                <td>149.00</td>
+                <td>21</td>
+                <td>31.29</td>
+                <td>180.29</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Skalbimo mašina</td>
+                <td>Vnt.</td>
+                <td>1</td>
+                <td>500.00</td>
+                <td>500.00</td>
+                <td>21</td>
+                <td>105.00</td>
+                <td>605.00</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        <p class="suma"><b>Suma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 797.39€</b></p>
+    <p class="kita"><b>Suma žodžiais: Dvylika eurų 10ct.</b></p>
+    <p class="kita"><b>Sąskaitą išrašė: Jonas Vardaitis</b></p>
+</div>
+
+
+</body>
+</html>

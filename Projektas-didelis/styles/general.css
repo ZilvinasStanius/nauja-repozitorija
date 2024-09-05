@@ -1,0 +1,50 @@
+:root {
+  --tamsi-spalva: #343a40;
+  --akcentuojama-spalva: #1ce1ac;
+}
+
+@font-face {
+  font-family: 'mano sriftas medium';
+  src: url('../assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-Medium.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'mano sriftas bold';
+  src: url('../assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-SemiBold.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'mano sriftas regular';
+  src: url('../assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-Regular.ttf')
+    format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+* {
+  font-family: 'Mandali', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'mano sriftas medium';
+  color: var(--tamsi-spalva);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}

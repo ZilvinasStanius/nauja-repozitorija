@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #222222;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+    
+
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    
+}
+
+nav a {
+    color: white;
+    font-size: 14px;
+    
+}
+nav .left {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Dropdown! */
+
+.dropbtn {
+    background-color: #222222;
+    color: white;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+   
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+   
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+   
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+   
+  .dropdown-content a:hover {background-color: #f1f1f1}
+   
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+   
+  .dropdown:hover .dropbtn {
+    background-color: #6a6060;
+  }
+
+
+
+
+    /* seach button */
+nav .right button, input {
+    border-radius: 4px;
+
+}
+/* Headline container green one ----> */
+section >  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(154,205,50);
+    padding-bottom: 40px;
+}
+
+/* Text styling */
+section .container h1 {
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(173,255,47);
+    font-weight: lighter;
+    
+}
+
+section .container p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(173,255,47);
+    
+}
+
+/* Button style/settings */
+section .container button {
+    background-color:rgb(51,122,183) ;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 14px;
+    color: white;
+    padding: 3px 6px;
+    font-size: 10px;
+}
+
+/* green box /p margins settings */
+section .container h1 {
+    margin-bottom: 0;
+}
+
+
+.row {
+    display: flex;
+    gap: 15px;
+    /* margin-left: 200px; */
+    /* margin-right: 200px; */
+}
+
+#main {
+    text-align: center;
+}
+
+.header {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+/* ............. */
+
+body {
+	padding-top: 0px;
+	color: #959595;
+	}
+	
+h1, h2, h3, h4, h5, h6 {
+	color: black;
+	}
+	
+.feature {
+	background-color: yellowgreen;
+	color: greenyellow;
+	}
+	
+.article-intro {
+    margin-bottom: 25px;
+}
+
+.footer-blurb {
+    padding: 30px 0;
+    background-color: goldenrod;
+    color: black;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+
+}
+    
+.footer-blurb-item {
+    padding: 30px;
+    }
+ 
+.small-print {
+	background-color: #fff;
+	padding: 30px 0;
+    display: flex;
+    align-self: flex-end;
+    
+
+}
+
+.feature,
+.page-intro,
+.article-intro,
+.footer-blurb,
+.small-print {
+	text-align: center;
+    
+    
+	}
+
+    footer > div > div p, h3 {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+     .img-circle {
+    border-radius: 50%;
+}
+
+.col-sm-4 footer-blurb-item {
+overflow:hidden;
+white-space:nowrap;
+
+}
+.small-print {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+.box-black {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(cta-bg.png);
+  height: 150px;
+  padding: 48px;
+  width: 1050px;
+
+  p {
+    color: rgb(253, 253, 253);
+    margin-bottom: 0px;
+
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 26px;
+    color: #ffffff;
+    margin: 0px 0px 16px;
+  }
+  .text-first {
+    width: 50%;
+    height: 50%;
+  }
+  .email {
+    margin-right: 40px;
+  }
+  button.get-acces {
+    color: #ffffff;
+    font-size: 16px;
+    background: #1ce1ac;
+    padding: 4px 11px;
+    border: 1px solid #1ce1ac;
+    border-radius: 3px;
+  }
+  input {
+    background: #ffffff1f;
+    padding: 8px 100px 8px 50px;
+    border: none;
+    margin-right: 10px;
+  }
+}
+/* ______ */
+section.mine {
+  background-image: url(/assets/images/footer-light-bg.png);
+  padding: 200px 0px 50px;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  li {
+    list-style-type: none;
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  ul {
+    padding: 0;
+  }
+}
+
+.list-box-special {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  img {
+    width: 117px;
+    height: 24px;
+    margin-top: 20px;
+  }
+}
+.black-box-container {
+  position: absolute;
+  bottom: 350px;
+}

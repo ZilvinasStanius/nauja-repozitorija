@@ -1,0 +1,75 @@
+section.container {
+  padding: 100px 0px 40px;
+  div.hero {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .first {
+    width: 50%;
+    padding: 0px 12px;
+  }
+
+  .hero-img {
+    width: 50%;
+    padding: 0px 12px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 40px;
+    margin: 0px 0px 24px;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 0px 0px 48px;
+  }
+  div.badge {
+    display: inline-block;
+    padding: 0px 15px;
+    margin: 0px 0px 16px;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    border: 1px solid #d4d5d6;
+  }
+
+  span {
+    color: rgb(32, 201, 151);
+  }
+}
+/* Buttons */
+.green {
+  background: linear-gradient(to right, #1ce1ac 0%, #8cf1d6 100%);
+  box-shadow: 0 5px 20px rgba(52, 58, 64, 0.1);
+  border: none;
+  border-radius: 40px;
+  color: #f8f9fa;
+}
+
+.white {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 8px 24px;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+/* Brands */
+div.hero > * {
+  flex: 1 1 500px;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-around;
+  padding: 48px 0px 0px;
+  margin: 48px 0px 16px;
+}
+.brands > img {
+  width: 140px;
+  height: 40px;
+}
