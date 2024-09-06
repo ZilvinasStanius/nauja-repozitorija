@@ -1,5 +1,5 @@
-main {
-  height: 300px;
+.space {
+  height: 3000px;
 }
 
 footer {
@@ -8,7 +8,7 @@ footer {
   background-image: url(/images/footer-light-bg.);
   background-position: bottom;
   background-repeat: no-repeat;
-  padding: 200px 0;
+  padding: 200px 0 50px;
 
   .newsletter-container {
     position: absolute;
