@@ -28,11 +28,11 @@ footer {
       .left-side {
         max-width: 500px;
 
-        h3{
+        h3 {
           color: white;
           font-size: 26px;
         }
-        p{
+        p {
           font-size: 16px;
           color: #adb5bd;
         }
@@ -60,12 +60,11 @@ footer {
             font-weight: 600;
             font-size: 16px;
             color: #fff;
-
           }
           button {
             background-color: #1ce1ac;
             outline: none;
-            border:none;
+            border: none;
             font-size: 16px;
             color: #fff;
             padding: 5px 20px;
@@ -77,7 +76,6 @@ footer {
             box-shadow: 0 4px 8px 0 rgba(28, 225, 172, 0.2),
               0 6px 20px 0 rgba(28, 225, 172, 0.19);
           }
-
         }
       }
     }
@@ -90,40 +88,67 @@ footer {
     gap: 120px;
     justify-content: center;
     z-index: 122;
+  }
+}
 
-    .right-footer {
-      .information-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+.right-footer {
+  .information-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
-        .information {
-          width: 200px;
+.information {
+  width: 200px;
 
-          h1 {
-            margin-bottom: 20px;
-          }
+  h1 {
+    margin-bottom: 20px;
+  }
 
-          ul {
-            padding: 0;
-          }
+  ul {
+    padding: 0;
+  }
+}
 
-          ul li {
-            position: relative;
-            list-style: none;
-            color: var(--pilka-spalva);
-            font-family: "Mandali", sans-serif;
-            cursor: pointer;
-          }
+ul li {
+  position: relative;
+  list-style: none;
+  color: #6c757d;
+  font-family: 'Mandali', sans-serif;
+  cursor: pointer;
+}
 
-          ul li:hover {
-            color: black;
-            transition: all 0.3s ease-in-out;
-            margin-left: 15px;
-          }
+ul li:hover {
+  color: black;
+  transition: all 0.3s ease-in-out;
+  margin-left: 15px;
+}
 
-          li:hover::before {
-            content: "●";
-            position: absolute;
-            left: -15px;
-            color: #1ce1ac;}
+li:hover::before {
+  content: '●';
+  position: absolute;
+  left: -15px;
+  color: #1ce1ac;
+}
+
+/* FONT SIZESS */
+.information {
+  h1 {
+    font-size: 22px;
+    margin: 0 0 16px;
+  }
+  li {
+    padding: 3px 0;
+  }
+}
+
+.footer-contents {
+  p {
+    margin: 0;
+    color: #6c757d;
+  }
+  a {
+    color: #6c757d;
+  }
+}
