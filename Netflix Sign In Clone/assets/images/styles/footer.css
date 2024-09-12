@@ -1,0 +1,33 @@
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgb(0, 0, 0) 20%);
+  color: #ffffffb3;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 48px;
+}
+
+.list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list ul li {
+  list-style-type: none;
+  margin: 16px 0 5px 12px;
+  min-width: 250px;
+  width: 300px;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.lng-select select {
+  padding: 6px;
+  width: 120px;
+  background-color: #544e4e;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+}
