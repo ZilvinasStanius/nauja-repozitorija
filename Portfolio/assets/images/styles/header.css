@@ -1,0 +1,20 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*  Button*/
+
+.btn {
+  padding: 5px;
+  border-radius: 5px;
+  background: transparent;
+  border: 2px solid lightgrey;
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: lightgray;
+}

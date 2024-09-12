@@ -32,6 +32,7 @@
 .cards {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   h5 {
     font-size: 22px;
@@ -72,4 +73,14 @@
   position: absolute;
   left: -5px;
   top: -36px;
+}
+
+@media (max-width: 796px) {
+  .cards {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .card {
+    min-width: 60%;
+  }
 }

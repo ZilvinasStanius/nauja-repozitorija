@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      .grid {
+        margin-bottom: 100px;
+        min-height: 200px;
+        min-width: 200px;
+        background-color: yellow;
+        display: grid;
+        gap: 5px;
+      }
+      .box {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(237, 160, 17);
+        border: 1px solid black;
+      }
+      .grid-3-columns {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .grid-second {
+        grid-template-columns: 1fr 50% 1fr;
+      }
+      .grid-third {
+        grid-template-columns: repeat(5, 1fr) 20%;
+        grid-template-rows: 1fr 175px 1fr;
+      }
+      .grid-fourth {
+        grid-template-columns: repeat(6, 1fr);
+      }
+      .special {
+        background-color: red;
+        grid-area: 1/2/3/6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-3-columns grid">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="grid-second grid">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="grid-third grid">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="grid-fourth grid">
+      <div class="box special"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+.content {
+  display: flex;
+  justify-content: center;
+
+  .text {
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .item-one {
+    margin-top: 50px;
+  }
+  .item-two {
+    margin-bottom: 50px;
+  }
+  .item-three {
+    margin-top: 100px;
+  }
+}
+
+/* WHAT WE DOO */
+
+.icon {
+  width: 50px;
+}
+
+.what-we-do {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+
+  h1 {
+    font-size: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}
+.what-we-do-second {
+  width: 50%;
+}
+
+.kontaineris {
+  display: flex;
+  justify-content: center;
+}
+
+.container2 {
+  img {
+    box-shadow: 20px 20px rgb(106, 9, 150);
+    width: 50%;
+    border-radius: 50px 0px 50px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .ltext {
+    color: lightgray;
+    width: 800px;
+  }
+  .ltext2 {
+    color: blueviolet;
+  }
+  .rtext {
+    color: rgb(203, 199, 199);
+  }
+  .list {
+    padding-top: 10px;
+    list-style-type: square;
+  }
+}

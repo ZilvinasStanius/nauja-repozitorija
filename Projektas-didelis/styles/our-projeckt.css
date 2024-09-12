@@ -88,6 +88,17 @@
   }
 }
 
+@media (max-width: 1150px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 796px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* fake dots========= */
 div.dots {
   max-width: 1140px;

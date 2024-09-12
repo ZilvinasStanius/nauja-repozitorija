@@ -1,0 +1,57 @@
+.sign-in-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 600px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+  padding: 60px;
+  border-radius: 4px;
+}
+
+form * {
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.red {
+  background-color: red;
+}
+.gray-transparent {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+span {
+  font-size: 11px;
+  margin-top: 30px;
+  color: grey;
+
+  a {
+    color: rgb(59, 59, 173);
+    text-decoration: none;
+  }
+}
+
+input {
+  border: 1px solid gray;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 13px;
+  text-align: left;
+}

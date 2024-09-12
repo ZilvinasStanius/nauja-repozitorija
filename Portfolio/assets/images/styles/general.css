@@ -1,0 +1,42 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+
+  .logotipas {
+    width: 100px;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+body {
+  background: linear-gradient(
+    0deg,
+    hsl(270, 49%, 45%) 0%,
+    rgba(60, 3, 134, 0.959) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 60px;
+  color: lightgrey;
+}
+span {
+  color: blueviolet;
+}
+
+p {
+  color: gray;
+}
