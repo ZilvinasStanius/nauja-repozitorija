@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>KMI Skaičiuoklė</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1 class="title">KMI skaičiuoklė</h1>
+        <div class="icon">
+          <img
+            src="/sck.png"
+            alt=""
+          />
+        </div>
+        <h3 class="lighter">Pasirinkite lytį</h3>
+        <div class="gender-box">
+          <label>
+            <input
+              type="radio"
+              id="vyras"
+              name="gender"
+              value="Vyras"
+            />
+            Vyras
+          </label>
+          <label>
+            <input
+              type="radio"
+              id="moteris"
+              name="gender"
+              value="Moteris"
+            />
+            Moteris
+          </label>
+        </div>
+        <div class="input-group">
+          <input
+            class="input-measures"
+            type="number"
+            id="height"
+            placeholder="Iveskite savo ūgį"
+          />
+
+          <!-- <label for="weight"></label> -->
+          <input
+            class="input-measures"
+            type="number"
+            id="weight"
+            placeholder="Iveskite savo svorį"
+          />
+
+          <!-- <label for="height"></label> -->
+        </div>
+
+        <div class="btn-apskaiciuoti">
+          <button onclick="calculateBMI()">Apskaičiuoti!</button>
+        </div>
+
+        <div
+          class="result"
+          id="resultDiv"
+        >
+          <h2 class="lower-tag"><span id="kmi-result"></span></h2>
+          <h2 id="kmi-feedback"></h2>
+          <h2 class="rekomenduojamas-svoris">
+            <span id="tobulasSvoris"></span>
+          </h2>
+        </div>
+        <div class="box-table">
+          <table id="kmiTable">
+            <h3
+              id="hiddenTitle"
+              class="hidden"
+            >
+              Pateikiama normatyvu lentelė:
+            </h3>
+            <thead>
+              <tr>
+                <th>KMI</th>
+                <th>Reikšme</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>mažiau kaip 18,5</td>
+                <td>nepakankamas svoris</td>
+              </tr>
+              <tr>
+                <td>18.5 ir daugiau, mažiau kaip 25</td>
+                <td>normalus svoris</td>
+              </tr>
+              <tr>
+                <td>25 ir daugiau, mažiau kaip 30</td>
+                <td>antsvoris</td>
+              </tr>
+              <tr>
+                <td>30 ir daugiau</td>
+                <td>nutukimas</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
