@@ -10,26 +10,33 @@ async function getDataFromApi() {
 getDataFromApi();
 
 function printRandomPpl(data) {
-  const cardElement = document.querySelector('.card');
+  const cardElement = document.querySelector('.container');
   let html = '';
-  html += `<div class="profile-picture">
-          <img
-            src=${data.picture.medium}
-            alt="profile-pic"
-          />
+  html += `<div class="card">
+          <div class="profile-picture">
+            <img
+              src=${data.picture.large}
+              alt="profile-pic"
+            />
+          </div>
+          <div class="info">
+            <h3 class="name">${data.name.title} ${data.name.first}</h3>
+            <h3>${data.name.last}</h3>
+            
+          </div>
         </div>
-        <div class="headline-info">
-          <h1>${data.name.title} ${data.name.first} ${data.name.last}</h1>
-          <h3>Gender : ${data.gender.toUpperCase()}</h3>
-          <h3>Age: ${data.dob.age}</h3>
-        </div>
-        <hr />
-        <div class="detailed-info">
-          <ul>
-            <li>City:${data.location.city}</li>
-            <li>Country:${data.location.country}</li>
-            <li>State: ${data.location.state}</li>
-            <li>Email : ${data.email}</li>
+       
+        <div class="ul-container">
+            <p>Info about me</p>
+           
+          <ul> 
+            <li>Country: ${data.location.country}</li>
+            <li>City: ${data.location.city}</li>
+            <li>Age: ${data.dob.age}</li>
+            <li>Gender: ${data.gender}</li>
+            <li>Email: ${data.email}</li>
+             <li>Phone: ${data.phone}</li>
+            
           </ul>
         </div>`;
 
