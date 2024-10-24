@@ -20,7 +20,7 @@ function printRandomPpl(data) {
             />
           </div>
           <div class="info">
-            <h3 class="name">${data.name.title} ${data.name.first}</h3>
+            <h3 class="name">${data.name.title}. ${data.name.first}</h3>
             <h3>${data.name.last}</h3>
             
           </div>
