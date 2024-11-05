@@ -3,7 +3,7 @@ async function getDataFromApi() {
   const response = await promise.json();
 
   const data = response.results[0];
-  console.log(data);
+  //   console.log(data);
   printRandomPpl(data);
 }
 
@@ -42,3 +42,37 @@ function printRandomPpl(data) {
 
   cardElement.innerHTML = html;
 }
+
+const augalai = [
+  'Pomidoras',
+  'Agurkas',
+  'Paprika',
+  'Moliūgas',
+  'Avokadas',
+  'Morka',
+];
+
+const x = augalai.find((augalas) => augalas.includes('ika'));
+/// .slice(-3) alternatyva ....
+
+console.log(x);
+
+const knyguTipai = [
+  { id: 1, title: 'Grožinė literatūra' },
+  { id: 2, title: 'Populiarioji psichologija' },
+  { id: 3, title: 'Literatūra vaikams ir jaunimui' },
+  { id: 4, title: 'Pomėgiai' },
+  { id: 5, title: 'Šeima, sveikata' },
+  { id: 6, title: 'Literatūra užsienio kalbomis' },
+  { id: 7, title: 'Dalykinė literatūra' },
+  { id: 8, title: 'Vadovėliai, pratybos ir knygos mokslams' },
+];
+
+const findSeven = knyguTipai.findIndex((knyga) => knyga.id === 7);
+console.log(findSeven);
+knyguTipai[findSeven].title = 'AAA';
+console.log(knyguTipai);
+
+const sk = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const y = sk.map((s) => ({ skaicius: s, misisipe: `${s} misisipe` }));
+console.log(y);

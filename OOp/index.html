@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      form > div {
+        margin-bottom: 1rem;
+      }
+      form > div > input {
+        padding: 0.5rem, 0.25rem;
+        outline: none;
+        border-radius: 5px;
+        min-width: 200px;
+        border: 1px solid black;
+      }
+      form > div > input:focus {
+        outline: 3px solid lightblue;
+      }
+      form > div > label {
+        display: inline-block;
+        width: 150px;
+      }
+      button {
+        padding: 0.5rem 4rem;
+        background-color: lightblue;
+        color: white;
+        border-radius: 5px;
+        border: none;
+      }
+      button:hover {
+        background-color: aqua;
+        cursor: pointer;
+      }
+
+      td,
+      th {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 0.5rem 0;
+        text-align: left;
+      }
+      table {
+        margin-top: 1rem;
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Maratono dalyviu registracija</h3>
+    <form>
+      <div>
+        <label for="dalyvisName">Dalyvio vardas</label>
+        <input
+          type="text"
+          id="dalyvisName"
+          name="dalyvisName"
+          placeholder="pvz Jonas"
+        />
+      </div>
+      <div>
+        <label for="dalyvisSecondName">Dalyvio pavarde</label>
+        <input
+          type="text"
+          id="dalyvisSecondName"
+          name="dalyvisSecondName"
+          placeholder="pvz Jonaitis"
+        />
+      </div>
+      <div>
+        <label for="dalyvisAge">Dalyvio amzius</label>
+        <input
+          type="number"
+          id="dalyvisAge"
+          min="0"
+          max="100"
+          name="dalyvisAge"
+          placeholder="pvz 18"
+        />
+      </div>
+      <div>
+        <label for="dalyvisWeight">Dalyvio svoris</label>
+        <input
+          type="number"
+          id="dalyvisWeight"
+          min="0"
+          max="200"
+          name="dalyvisWeight"
+          placeholder="pvz 60kg"
+        />
+      </div>
+      <button
+        class="btn"
+        type="submit"
+      >
+        Išsiūsti
+      </button>
+      <button type="reset">Atstatyti</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Vardas</th>
+          <th>Pavarde</th>
+          <th>Amzius</th>
+          <th>Svoris</th>
+          <th>Svorio kategorija</th>
+          <th>Issiregistruoti</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- <td>1.</td>
+        <td>Tomas</td>
+        <td>Jonalis</td>
+        <td>36</td>
+        <td>82kg</td>
+        <td>III</td> -->
+      </tbody>
+    </table>
+    <script
+      src="script.js"
+      type="module"
+    ></script>
+  </body>
+</html>
