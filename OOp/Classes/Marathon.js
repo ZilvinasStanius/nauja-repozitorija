@@ -85,26 +85,7 @@ export default class Marathon {
     runner.registerToMarathon(runnerId, runnerCategory);
     addRunnerToTable(runner);
   }
-  //   istrinti() {
-  //     document.querySelector('#tableBody').addEventListener('click', (event) => {
-  //       if (event.target.classList.contains('delete')) {
-  //         const runnerId = +event.target.getAttribute('data-id');
 
-  //         // Look through each category to find and delete the runner
-  //         [
-  //           this.#IkategorijosBegikai,
-  //           this.#IIkategorijosBegikai,
-  //           this.#IIIkategorijosBegikai,
-  //         ].forEach((category) => {
-  //           const index = category.findIndex((runner) => runner.id === runnerId);
-  //           if (index !== -1) {
-  //             // Remove the runner from the correct category array
-  //             category.splice(index, 1);
-  //           }
-  //         });
-  //       }
-  //     });
-  //   }
   istrinti() {
     document.querySelector('#tableBody').addEventListener('click', (event) => {
       // Check if the clicked element is a delete button
