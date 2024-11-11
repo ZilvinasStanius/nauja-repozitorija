@@ -62,10 +62,7 @@ function getDayOfWeek() {
 function getTranslatedDate(language, year, month, day, weekday) {
   return `Metai: ${year}\nMenuo: ${dataLanguageWithMonths[language].months[month]}\nMenesio diena: ${day}\nSavaites diena:${dataLanguageWithMonths[language].days[weekday]}`;
 }
-// function textInFile(language, month, day, weekDay){
-//     return   `Metai: ${dataLanguageWithMonths[language][funkncijosKintamasis]}
-//             Menuo: ${dataLanguageWithMonths[language][month]}`
-// }
+
 fs.appendFile(`${dateNumber}.txt`, `${dateText}`, (err) => {
   if (err) throw new Error('Klaida');
   console.log('Failas pridetas');
