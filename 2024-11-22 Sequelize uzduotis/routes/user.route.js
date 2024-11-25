@@ -5,42 +5,56 @@ import Vehicle from '../modules/Vehicle.model.js';
 const { generateNewPerson } = faker;
 
 const router = express.Router();
-router.get('/', async (req, res) => {
-  const { hasVehicleCount } = req.query;
-  const userWithCar = await User.findAll({
-    include: {
-      model: Vehicle,
-      required: true,
-    },
-  });
-  const filteredUsers = userWithCar.filter(
-    (user) => user.vehicles.length === Number(hasVehicleCount)
-  );
-  res.status(200).send(filteredUsers);
-});
 
+//Get router for get all users check if has vehicles and give users with vehicels
 router.get('/', async (req, res) => {
-  const includesVehicles = req.query.vehicles === 'yes';
+  //Query parameters
+  const { hasVehicleCount, vehicles } = req.query;
+  try {
+    //Checking the  hasVehicleCount route
+    if (hasVehicleCount) {
+      if (!Number(hasVehicleCount))
+        return res
+          .status(400)
+          .json({ message: 'hasVehicleCount must be a number' });
+      //searching users that has vehicles required true gives only those users with vehicles
+      const userWithVehicles = await User.findAll({
+        include: { model: Vehicle, required: true },
+      });
+      //checking if there is vehicles
+      const filteredUser = userWithVehicles.filter(
+        (user) => user.vehicles.length === Number(hasVehicleCount)
+      );
+      if (filteredUser.length === 0)
+        return res
+          .status(404)
+          .json({ message: 'User with this vehicle count not found' });
 
-  const users = await User.findAll({
-    include: includesVehicles
-      ? {
+      return res.status(200).send(filteredUser);
+    }
+    //      giving user with vehicles if ?vehicles=yes
+    if (vehicles === 'yes') {
+      const usersWhoHasVehicles = await User.findAll({
+        include: {
           model: Vehicle,
-          attributes: ['make', 'model', 'type', 'color'],
-        }
-      : [],
-  });
+          //it gives back only users who has atleast one vehicle
+          required: true,
 
-  res.status(200).json(users);
+          attributes: ['make', 'model', 'type', 'color', 'fuel'],
+        },
+      });
+      return res.status(200).send(usersWhoHasVehicles);
+    }
+    // Giving all users if no query parameters have been passed
+    const allUsers = await User.findAll();
+    res.status(200).send(allUsers);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('internal server error');
+  }
 });
 
-// Visi User
-router.get('/', async (req, res) => {
-  const allUsers = await User.findAll();
-  res.status(200).send(allUsers);
-});
-
-// User pagal ID
+// User  find by his ID
 router.get('/:id', async (req, res) => {
   const id = req.params.id;
   const allUsers = await User.findOne({ where: { id: id } });

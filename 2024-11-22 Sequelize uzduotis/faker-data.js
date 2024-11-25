@@ -25,4 +25,3 @@ const generateNewPerson = () => {
   };
 };
 export default { generateNewPerson, generateNewVehicle };
-console.log(generateNewPerson());
