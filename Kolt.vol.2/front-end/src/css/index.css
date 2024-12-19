@@ -1,0 +1,17 @@
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(76, 76, 183);
+}
+a:hover {
+	color: rgb(51, 51, 184);
+	text-decoration: underline;
+}
+
+.link-mt {
+	display: inline-block;
+	margin-top: 2rem;
+}
